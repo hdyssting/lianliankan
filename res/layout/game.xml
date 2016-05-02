@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#eee">
+    
+    <TextView 
+        android:id="@+id/game_score_lebel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="@string/game_score"/>
+    
+    <TextView 
+        android:id="@+id/game_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_score_lebel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="00000"/>
+    
+    <TextView 
+        android:id="@+id/game_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_score"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="@string/game_time"/>
+    
+    <TextView 
+        android:id="@+id/game_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_time_label"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="300"/>
+    
+    <com.lianliankan.app.ui.GameView 
+        android:id="@+id/game_view"
+        android:layout_width="480dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/game_score_lebel"
+        android:layout_marginLeft="90dp"/>
+
+    <Button 
+        android:id="@+id/game_hint_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/game_hint"/>
+    
+    <Button 
+        android:id="@+id/game_pause_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/game_hint_btn"
+        android:layout_below="@id/game_hint_btn"
+        android:layout_marginTop="50dp"
+        android:text="@string/game_pause"/>
+    
+    <Button 
+        android:id="@+id/game_reset_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/game_hint_btn"
+        android:layout_below="@id/game_pause_btn"
+        android:layout_marginTop="50dp"
+        android:text="@string/game_reset"/>
+    
+</RelativeLayout>
